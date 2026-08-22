@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Terminos y Condiciones - WriterAssistant</title>
+<title>Terminos y Condiciones / Terms and Conditions - WriterAssistant</title>
 <style>
   body { font-family: -apple-system, Segoe UI, Roboto, Arial, sans-serif; max-width: 760px; margin: 0 auto; padding: 32px 20px 80px; color: #1d1d1f; line-height: 1.65; background: #fafafa; }
   h1 { font-size: 1.7em; border-bottom: 2px solid #3b6ef0; padding-bottom: 10px; }
@@ -13,14 +13,23 @@
   blockquote { background: #eef2ff; border-left: 4px solid #3b6ef0; margin: 1em 0; padding: 0.8em 1.2em; border-radius: 6px; }
   code { background: #eee; padding: 2px 5px; border-radius: 4px; }
   hr { border: none; border-top: 1px solid #ddd; margin: 2.5em 0; }
-  .nav { margin-bottom: 2em; font-size: 0.95em; }
+  .nav { margin-bottom: 1.4em; font-size: 0.95em; }
   .nav a { margin-right: 16px; }
-  .langsep { margin-right: 16px; color: #ccc; }
+  .langswitch { display: inline-flex; border: 1px solid #3b6ef0; border-radius: 8px; overflow: hidden; margin-bottom: 1.6em; }
+  .langswitch button { border: none; background: #fff; color: #3b6ef0; padding: 7px 18px; font-size: 0.9em; font-weight: 600; cursor: pointer; }
+  .langswitch button.active { background: #3b6ef0; color: #fff; }
   em { color: #555; font-size: 0.92em; }
+  [data-lang]{ }
 </style>
 </head>
 <body>
-<div class="nav"><a href="index.html">Inicio</a><a href="privacidad.html">Politica de Privacidad</a><a href="terminos.html">Terminos y Condiciones</a><span class="langsep">|</span><a href="privacy.html">EN</a></div>
+<div class="langswitch">
+  <button data-set="es" onclick="setLang('es')">ES</button>
+  <button data-set="en" onclick="setLang('en')">EN</button>
+</div>
+<div class="nav" data-lang="es"><a href="index.html">Inicio</a><a href="privacidad.html">Politica de Privacidad</a></div>
+<div class="nav" data-lang="en"><a href="index.html">Home</a><a href="privacidad.html">Privacy Policy</a></div>
+<div data-lang="es">
 <h1>Términos y Condiciones de Uso de WriterAssistant</h1>
 <p><strong>Última actualización: 22 de agosto de 2026</strong></p>
 <p>Estos Términos y Condiciones de Uso ("Términos") rigen el acceso y uso de la aplicación WriterAssistant ("la App", "nosotros"). Al descargar, instalar, acceder o usar la App, usted ("el Usuario") acepta quedar vinculado por estos Términos. Si no está de acuerdo, no debe usar la App.</p>
@@ -94,5 +103,101 @@ g. Intente vulnerar, eludir o abusar de los sistemas técnicos de la App o de lo
 <h2>14. Contacto</h2>
 <p>Para consultas relacionadas con estos Términos, puede contactarnos en:</p>
 <p><strong>rogersarmiento211@gmail.com</strong></p>
+</div>
+<div data-lang="en">
+<h1>WriterAssistant Terms and Conditions of Use</h1>
+<p><strong>Last updated: August 22, 2026</strong></p>
+<p>These Terms and Conditions of Use ("Terms") govern access to and use of the WriterAssistant application ("the App", "we"). By downloading, installing, accessing, or using the App, you ("the User") agree to be bound by these Terms. If you do not agree, you must not use the App.</p>
+<hr />
+<h2>1. Description of the service</h2>
+<p>WriterAssistant is a mobile application for writing novels and narrative texts, which includes text-editing tools and assistance features powered by generative artificial intelligence (autocomplete suggestions and narrative continuation generation), provided through third-party services (OpenAI and/or Anthropic).</p>
+<p>WriterAssistant is a <strong>creative assistance tool</strong>. The User is the sole author and is solely responsible for the final content of their works, including any AI-assisted generated text they choose to incorporate.</p>
+<h2>2. Eligibility and user accounts</h2>
+<h3>2.1 Minimum age</h3>
+<p>Use of the App requires that the User be at least 16 years of age, or the minimum age of digital consent required in their country of residence. If the User is a minor under applicable law, they must have the consent of their parents or legal guardians to use the App.</p>
+<h3>2.2 Accounts (future features)</h3>
+<p>When the App implements sign-in via Google or email, the User will be responsible for:</p>
+<ul>
+<li>Providing truthful information when creating their account.</li>
+<li>Maintaining the confidentiality of their login credentials.</li>
+<li>All activity that occurs under their account.</li>
+</ul>
+<p>We reserve the right to suspend or delete accounts that violate these Terms, provide false information, or exhibit fraudulent or abusive activity.</p>
+<h2>3. Ownership of User content</h2>
+<h3>3.1 Your works belong to you</h3>
+<p>The User retains all intellectual property rights over the original content they write within the App (titles, synopses, chapters, novel text). WriterAssistant does not claim any ownership over such content.</p>
+<h3>3.2 Limited license to operate the service</h3>
+<p>By using the App's artificial intelligence features, the User grants WriterAssistant a limited, non-exclusive, revocable license to transmit the necessary text to third-party artificial intelligence providers (Section 4), for the sole purpose of generating the response requested by the User. This license does not imply any transfer of copyright or authorization to use the User's content for purposes other than providing the requested service.</p>
+<h3>3.3 AI-generated content</h3>
+<p>Text generated by the artificial intelligence features is offered as a suggestion or draft. The User is responsible for reviewing, editing, and deciding whether to incorporate such text into their work. WriterAssistant does not guarantee the originality, accuracy, coherence, or absence of similarity to third-party works of AI-generated text, and recommends that the User carefully review any generated content before publishing or distributing it.</p>
+<h3>3.4 In-app publishing (future features)</h3>
+<p>WriterAssistant may in the future offer optional features that allow the User to publish or share their works within the App so that other Users can read them. Such publishing will always be a voluntary and explicit decision by the User regarding their own content, and may be withdrawn by the User at any time. The User remains the sole owner of the rights to such content; WriterAssistant merely acts as the platform hosting and displaying the content according to the User's own choice.</p>
+<h2>4. Third-party services</h2>
+<p>The App's artificial intelligence features depend on services operated by third parties, including OpenAI and Anthropic. Use of these features is subject, in addition to these Terms, to the acceptable use policies of such providers:</p>
+<ul>
+<li>OpenAI usage policies: https://openai.com/policies/usage-policies</li>
+<li>Anthropic acceptable use policy: https://www.anthropic.com/legal/aup</li>
+</ul>
+<p>WriterAssistant is not responsible for the availability, accuracy, response times, or content generated by such third-party services, nor for interruptions caused by changes to their policies, pricing, or availability.</p>
+<h2>5. Acceptable use — prohibited conduct</h2>
+<p>The User agrees not to use WriterAssistant, including its artificial intelligence features, to create, generate, store, or distribute content that:</p>
+<p>a. Is illegal under the laws applicable in their jurisdiction.
+b. Involves exploitation, child sexual abuse, or depicts minors in sexual contexts in any way whatsoever, without exception.
+c. Constitutes harassment, threats, incitement to violence, or hate speech directed at real people or groups.
+d. Infringes third-party intellectual property rights (for example, substantially reproducing copyrighted works without authorization).
+e. Defames, slanders, or violates the image or privacy rights of identifiable real people.
+f. Promotes or facilitates fraudulent, illegal, or identity-impersonation activities.
+g. Attempts to bypass, circumvent, or abuse the technical systems of the App or of the artificial intelligence providers (for example, through "jailbreak" techniques to obtain content that such providers expressly prohibit under their own usage policies).</p>
+<p>Violation of this section may result in the immediate suspension or termination of the User's access to the App, without prejudice to any other legal action that may apply.</p>
+<p>WriterAssistant reserves the right, but not the obligation, to monitor the use of its artificial intelligence features to the extent necessary to prevent abuse, comply with the law, or respond to requirements from its AI service providers.</p>
+<h2>6. Disclaimer of warranties</h2>
+<p>THE APP AND ITS ARTIFICIAL INTELLIGENCE FEATURES ARE PROVIDED "AS IS" AND "AS AVAILABLE", WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, ACCURACY, OR UNINTERRUPTED SERVICE AVAILABILITY.</p>
+<p>We do not warrant that:</p>
+<ul>
+<li>AI-generated content will be accurate, coherent, error-free, or suitable for any specific purpose.</li>
+<li>The App will be free of interruptions, errors, or security vulnerabilities.</li>
+<li>User data will never be lost (the User is advised to back up important work).</li>
+</ul>
+<h2>7. Limitation of liability</h2>
+<p>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, WRITERASSISTANT AND ITS DEVELOPER(S) SHALL NOT BE LIABLE FOR INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, NOR FOR LOSS OF DATA, PROFITS, REVENUE, OR USE, ARISING FROM THE USE OR INABILITY TO USE THE APP, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</p>
+<p>In any event, WriterAssistant's total liability to the User for any claim related to the App shall not exceed the amount paid by the User, if any, for use of the App in the twelve (12) months prior to the claim.</p>
+<p>Some jurisdictions do not allow the exclusion or limitation of certain warranties or liabilities, so some of the above limitations may not fully apply to you.</p>
+<h2>8. Indemnification</h2>
+<p>The User agrees to defend, indemnify, and hold harmless WriterAssistant and its developer(s) from any claim, damage, loss, or expense (including reasonable legal fees) arising from: (a) the User's breach of these Terms; (b) content the User creates, generates, or distributes through the App; or (c) the User's violation of third-party rights.</p>
+<h2>9. App intellectual property</h2>
+<p>The name "WriterAssistant", its source code, design, interface, logos, and other elements of the App (excluding content created by Users) are the property of Roger José Sarmiento and are protected by applicable intellectual property laws. No license is granted to the User over these elements except the right to use the App in accordance with these Terms.</p>
+<h2>10. Changes to the service and to these Terms</h2>
+<p>We reserve the right to modify, suspend, or discontinue any feature of the App, including artificial intelligence features, at any time and without prior notice, particularly if such modification is necessary due to changes in our AI providers' policies or availability.</p>
+<p>We may update these Terms periodically. Continued use of the App after changes are published constitutes acceptance of the updated Terms. The "Last updated" date at the top of this document reflects the current version.</p>
+<h2>11. Termination</h2>
+<p>The User may stop using the App and uninstall it at any time. We may suspend or terminate the User's access to the App, with or without prior notice, in the event of a breach of these Terms, particularly Section 5 (Acceptable use).</p>
+<h2>12. Governing law and jurisdiction</h2>
+<p>These Terms are governed by the laws of the United States of America, without regard to conflict-of-law rules. Any dispute arising from these Terms shall be submitted to the competent courts of the United States of America, unless applicable consumer protection law provides otherwise for the User.</p>
+<h2>13. Severability</h2>
+<p>If any provision of these Terms is held invalid or unenforceable by a competent court, such provision shall be interpreted to reflect as closely as possible the original intent of the parties, and the remaining provisions shall remain in full force and effect.</p>
+<h2>14. Contact</h2>
+<p>For inquiries related to these Terms, you may contact us at:</p>
+<p><strong>rogersarmiento211@gmail.com</strong></p>
+</div>
+
+<script>
+function setLang(lang) {
+  document.querySelectorAll('[data-lang]').forEach(function(el) {
+    el.style.display = (el.getAttribute('data-lang') === lang) ? '' : 'none';
+  });
+  document.querySelectorAll('.langswitch button').forEach(function(btn) {
+    btn.classList.toggle('active', btn.getAttribute('data-set') === lang);
+  });
+  document.documentElement.lang = lang;
+  try { localStorage.setItem('wa_legal_lang', lang); } catch (e) {}
+}
+(function() {
+  var saved = null;
+  try { saved = localStorage.getItem('wa_legal_lang'); } catch (e) {}
+  var browserLang = (navigator.language || 'es').toLowerCase().indexOf('es') === 0 ? 'es' : 'en';
+  setLang(saved || browserLang);
+})();
+</script>
+
 </body>
 </html>
