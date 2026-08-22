@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Politica de Privacidad / Privacy Policy - WriterAssistant</title>
+<title>Privacy Policy / Politica de Privacidad - WriterAssistant</title>
 <style>
   body { font-family: -apple-system, Segoe UI, Roboto, Arial, sans-serif; max-width: 760px; margin: 0 auto; padding: 32px 20px 80px; color: #1d1d1f; line-height: 1.65; background: #fafafa; }
   h1 { font-size: 1.7em; border-bottom: 2px solid #3b6ef0; padding-bottom: 10px; }
@@ -24,8 +24,8 @@
 </head>
 <body>
 <div class="langswitch">
-  <button data-set="es" onclick="setLang('es')">ES</button>
   <button data-set="en" onclick="setLang('en')">EN</button>
+  <button data-set="es" onclick="setLang('es')">ES</button>
 </div>
 <div class="nav" data-lang="es"><a href="index.html">Inicio</a><a href="terminos.html">Terminos y Condiciones</a></div>
 <div class="nav" data-lang="en"><a href="index.html">Home</a><a href="terminos.html">Terms and Conditions</a></div>
@@ -224,8 +224,7 @@ function setLang(lang) {
 (function() {
   var saved = null;
   try { saved = localStorage.getItem('wa_legal_lang'); } catch (e) {}
-  var browserLang = (navigator.language || 'es').toLowerCase().indexOf('es') === 0 ? 'es' : 'en';
-  setLang(saved || browserLang);
+  setLang(saved || 'en');
 })();
 </script>
 
