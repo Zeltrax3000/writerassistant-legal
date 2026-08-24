@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eliminar cuenta / Delete Account - WriterAssistant</title>
+<style>
+  body { font-family: -apple-system, Segoe UI, Roboto, Arial, sans-serif; max-width: 760px; margin: 0 auto; padding: 40px 20px; color: #1d1d1f; line-height: 1.65; background: #fafafa; }
+  h1 { font-size: 1.8em; }
+  h2 { font-size: 1.3em; margin-top: 2em; border-top: 1px solid #ddd; padding-top: 1em; }
+  ol, ul { padding-left: 1.4em; }
+  .lang-switch { text-align: center; margin-bottom: 24px; }
+  .lang-switch button { border: 1px solid #3b6ef0; background: #fff; color: #3b6ef0; padding: 6px 16px; border-radius: 6px; cursor: pointer; font-weight: 600; margin: 0 4px; }
+  .lang-switch button.active { background: #3b6ef0; color: #fff; }
+  .contact { background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 16px 20px; margin-top: 1.5em; }
+  #en { display: none; }
+</style>
+</head>
+<body>
+<div class="lang-switch">
+  <button id="btn-es" class="active" onclick="showLang('es')">Español</button>
+  <button id="btn-en" onclick="showLang('en')">English</button>
+</div>
+
+<div id="es">
+<h1>Eliminar tu cuenta y tus datos - WriterAssistant</h1>
+<p>Si quieres eliminar tu cuenta de WriterAssistant y los datos asociados almacenados en nuestros servidores, sigue estos pasos:</p>
+
+<h2>Opción 1: Desde la app (recomendado)</h2>
+<ol>
+  <li>Abre la app WriterAssistant en tu dispositivo.</li>
+  <li>Inicia sesión con tu cuenta (Google o email/contraseña).</li>
+  <li>Ve a <strong>Ajustes → Cuenta → Eliminar cuenta</strong>.</li>
+  <li>Confirma la eliminación.</li>
+</ol>
+
+<h2>Opción 2: Por correo electrónico</h2>
+<p>Si no puedes acceder a la app, envía un correo a <strong>teamwriterassistant@gmail.com</strong> desde la dirección de email asociada a tu cuenta, con el asunto "Eliminar cuenta", solicitando la eliminación. Procesaremos tu solicitud en un plazo razonable.</p>
+
+<h2>Qué datos se eliminan</h2>
+<ul>
+  <li>Tu email, nombre y cualquier identificador de cuenta almacenado en nuestros servidores (Supabase).</li>
+  <li>Tu saldo de créditos e historial de compras/consumo asociado a la cuenta.</li>
+</ul>
+
+<h2>Qué datos NO se eliminan automáticamente</h2>
+<ul>
+  <li>Los libros, capítulos e imágenes que hayas creado se guardan únicamente en tu dispositivo (almacenamiento local), no en nuestros servidores. Eliminar la cuenta no borra esos archivos de tu teléfono; puedes borrarlos manualmente desinstalando la app o desde el gestor de archivos del dispositivo.</li>
+</ul>
+
+<div class="contact">
+  <strong>Contacto:</strong> teamwriterassistant@gmail.com
+</div>
+</div>
+
+<div id="en">
+<h1>Delete your account and data - WriterAssistant</h1>
+<p>If you want to delete your WriterAssistant account and the associated data stored on our servers, follow these steps:</p>
+
+<h2>Option 1: From the app (recommended)</h2>
+<ol>
+  <li>Open the WriterAssistant app on your device.</li>
+  <li>Sign in with your account (Google or email/password).</li>
+  <li>Go to <strong>Settings → Account → Delete account</strong>.</li>
+  <li>Confirm the deletion.</li>
+</ol>
+
+<h2>Option 2: By email</h2>
+<p>If you can't access the app, send an email to <strong>teamwriterassistant@gmail.com</strong> from the email address associated with your account, with the subject "Delete account", requesting deletion. We will process your request within a reasonable time.</p>
+
+<h2>What data is deleted</h2>
+<ul>
+  <li>Your email, name, and any account identifier stored on our servers (Supabase).</li>
+  <li>Your credit balance and purchase/consumption history associated with the account.</li>
+</ul>
+
+<h2>What data is NOT automatically deleted</h2>
+<ul>
+  <li>Books, chapters, and images you created are stored only on your device (local storage), not on our servers. Deleting your account does not remove those files from your phone; you can remove them manually by uninstalling the app or using your device's file manager.</li>
+</ul>
+
+<div class="contact">
+  <strong>Contact:</strong> teamwriterassistant@gmail.com
+</div>
+</div>
+
+<script>
+function showLang(lang) {
+  document.getElementById('es').style.display = lang === 'es' ? 'block' : 'none';
+  document.getElementById('en').style.display = lang === 'en' ? 'block' : 'none';
+  document.getElementById('btn-es').classList.toggle('active', lang === 'es');
+  document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+}
+</script>
+</body>
+</html>
